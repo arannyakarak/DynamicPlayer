@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Dynamic Media player</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="c/main.css">
+	<script src="j/transcript.js" defer></script>
+	<script type="module" src="j/main.js" defer></script>
+
+</head>
+
+<body>
+	<section id="hero">
+		<!-- <h1>Bharatanatyam <br> Theme: Mahishasura Mardini</h1> -->
+		<div class="slide-effect">
+			<!-- <div class="text">CSS Slide Effect:</div> -->
+			<div class="slideDown">Bharatanatyam</div>
+			<div class="slideUp">The Indian Classical Dance</div>
+		</div>
+		<main id="container">
+
+			<section class="col1">
+
+				<div id="videoContainer" class="player" width="352">
+					<video id="vido" class="player-video viewer" controls poster="./images/girl-dancer.jpg">
+						<source src="assets/aigiri.mp4" type="video/mp4">
+						<source src="assets/aigiri.webm" type="video/webm">
+						<source src="assets/aigiri.ogg" type="video/ogg">
+						<track label="Sanskrit" kind="captions" srclang="Sanskrit" src="captions/aigiri.vtt" default>
+						<track label="English" kind="subtitles" srclang="en" src="subtitles/english.vtt">
+						<track label="Hindi" kind="subtitles" srclang="hindi" src="subtitles/hindi.vtt">
+						<!-- final fallback to text -->
+				 <h2>Aigiri Nandini (Mahishasura Mardini Stotram)</h2>
+				 <p>Ayi giri nandini, nandhitha medhini,
+					 Viswa vinodhini nandanuthe,
+					 Girivara vindhya sirodhi nivasini,
+					 Vishnu Vilasini Jishnu nuthe,
+					 Bhagawathi hey sithi kanda kudumbini,
+					 Bhoori kudumbini bhoori kruthe,
+					 Jaya Jaya He Mahishasura Mardini, Ramya Kapardini Shaila Suthe
+					 Suravara varshini, durdara darshini,
+					 Durmukhamarshani, harsha rathe,
+					 Tribhuvana poshini, Sankara thoshini,
+					 Kilbisisha moshini, ghosha rathe,
+					 Danuja niroshini, Dithisutha roshini,
+					 Durmatha soshini, Sindhu suthe,
+					 Jaya Jaya Hey Mahishasura Mardini, Ramya Kapardini Shaila Suthe
+				 </p>
+				 <p>Ayi Jagadambha Madambha, Kadambha,
+					 Vana priya vasini, Hasarathe,
+					 Shikhari siromani, thunga Himalaya,
+					 Srunga nijalaya, madhyagathe,
+					 Madhu Madure, Mdhukaitabha banjini,
+					 Kaitabha banjini, rasa rathe,
+					 Jaya Jaya He Mahishasura Mardini, Ramya Kapardini Shaila Suthe
+					 Ayi satha kanda, vikanditha runda,
+					 Vithunditha shunda, Gajathipathe,
+					 Ripu Gaja ganda, Vidhaarana chanda,
+					 Paraakrama shunda, mrugathipathe,
+					 Nija bhuja danda nipaathitha khanda,
+					 Vipaathitha munda, bhatathipathe,
+					 Jaya Jaya He Mahishasura Mardini, Ramya Kapardini Shaila Suthe
+				 </p>
+					</video>
+					<div id="video-controls" class="controls" data-state="hidden">
+						<div class="player-controls">
+							<div class="progress">
+								<div class="progress-filled"></div>
+							</div>
+							<button class="player-button toggle" title="Toggle Play">►</button>
+							<input type="range" name="volume" class="player-slider" min="0" max="1" step="0.05"
+								value="1">
+							<input type="range" name="playbackRate" class="player-slider" min="0.5" max="1.5"
+								step="0.5" value="1">
+							<span class="current">00:00</span> / <span class="duration">00:00</span>
+							<button data-skip="-10" class="player-button">«</button>
+							<button data-skip="25" class="player-button">»</button>
+							<button id="subtitles" class="player-button" type="button" data-state="subtitles">CC</button>
+							<button class="fullscreen-btn">FS</button>
+						</div>
+					</div>
+				</div>
+				
+				 <!-- <div id="controls">  -->
+				<form id="video_form">
+					
+					<fieldset>
+						<select id="video_select">
+							<option>Select a video to play...</option>
+							<option value="assets/aigiri.mp4" selected>Bharatanatyam(mp4)</option>
+							<option value="assets/aigiri.ogg">Bharatanatyam(ogv)</option>
+							<option value="assets/aigiri.webm">Bharatanatyam(webm)</option>
+						</select>
+					</fieldset>
+					
+				</form>
+			<!-- </div> -->
+
+				<div class="show-captions">
+					<h3><a id="show-hide" href="#">Show Transcript</a></h3>
+					<a id="transcript-en" href="#">Sanskrit</a>
+					<a id="transcript-es" href="#">English</a>
+					<a id="transcript-fr" href="#">hindi</a>
+					<div id="transcript"></div>
+				</div>
+			</section>
+
+			<section class="col2 ">
+				<div id="str"> </div>
+				<iframe id="web" src="">
+
+				</iframe>
+			</section>
+
+		</main>
+	</section>
+</body>
+
+</html>
