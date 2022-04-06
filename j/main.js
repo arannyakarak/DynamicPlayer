@@ -132,12 +132,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
         clip.src = e.target.value;
         clip.load();
 
-        var el = document.getElementById('str');
-        el.innerHTML = "";
-        document.querySelector("#web").src = "";
-        document.querySelector("#web").style.borderRadius = None;
+        // var el = document.getElementById('str');
+        // el.innerHTML = "";
+        // document.querySelector("#web").src = "";
+        // document.querySelector("#web").style.borderRadius = None;
 
-        clip.currentTime = 0;
+        // clip.currentTime = 0;
         clip.play();  
     }
 
