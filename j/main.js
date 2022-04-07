@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const transcript_es = document.getElementById("transcript-es");
     const transcript_fr = document.getElementById("transcript-fr");
     const showHide = document.getElementById("show-hide");
-    
+
 
     selectVid.addEventListener("change", (e) => {
         selectVideo(e, vid);
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // document.querySelector("#web").style.borderRadius = None;
 
         // clip.currentTime = 0;
-        clip.play();  
+        clip.play();
     }
 
 });
@@ -152,7 +152,8 @@ function intro() {
     var str = string.split("");
     var el = document.getElementById('str');
     (function animate() {
-        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+        str.length > 0 ? el.innerHTML += str.shift() :
+            clearTimeout(running);
         var running = setTimeout(animate, 70);
     })();
     document.querySelector("#web").src = "images/india.png";
@@ -178,8 +179,8 @@ function history() {
     document.body.style.color = "orange";
 
     setTimeout(() => {
-    document.querySelector("#web").src = "images/info.jpg";
-    }, 3000); 
+        document.querySelector("#web").src = "images/info.jpg";
+    }, 3000);
 
 }
 
@@ -226,8 +227,8 @@ function mythology() {
     document.body.style.color = "white";
     document.querySelector("#vido").style = "border: 10px solid white";
     setTimeout(() => {
-    document.querySelector("#web").src = "images/dance.png";
-}, 4000);
+        document.querySelector("#web").src = "images/dance.png";
+    }, 4000);
 }
 
 function wikipedia() {
@@ -238,7 +239,7 @@ function wikipedia() {
     document.querySelector("body").style = "background-image: linear-gradient(orange, white, green);";
     document.querySelector("#web").style.borderRadius = "2px";
     document.querySelector("#vido").style = "border: 10px solid orange";
-    normalSpeed.style = "border: 2px solid orange";
+
 
 }
 
@@ -284,6 +285,7 @@ function mudra1() {
     // document.querySelector("body").style = "background-image: url('images/cover.jpg');"
     document.querySelector("#web").style.borderRadius = "2px";
     document.querySelector("#vido").style = "border: 10px solid black";
+    document.body.style.color = "white";
 
 }
 
@@ -315,7 +317,7 @@ function story() {
         var running = setTimeout(animate, 70);
     })();
     setTimeout(() => {
-    document.querySelector("#web").src ="images/durga.png";
+        document.querySelector("#web").src = "images/durga.png";
     }, 3000);
     document.body.style.backgroundImage = "url('images/bc4.jpg')";
     document.querySelector("#web").style.borderRadius = "2px";
@@ -334,7 +336,7 @@ function story2() {
         var running = setTimeout(animate, 70);
     })();
     // document.querySelector("#web").src =
-        // "images/durga.png";
+    // "images/durga.png";
     // document.body.style.backgroundImage = "url('images/bc4.jpg')";
     // document.querySelector("#web").style.borderRadius = "2px";
     // document.querySelector("#vido").style = "none";
@@ -346,10 +348,10 @@ function description() {
     el.innerHTML = "";
     var string = "Song:Aigiri Nandini / Artist:Rajalakshmee Sanjay. Presenting Durga Stuti where she defeats the demon Mahishasura to  liberate oppressed & restore peace & prosperity.";
     var str = string.split("");
-    var el = document.getElementById('str');
+    // var el = document.getElementById('str');
     (function animate() {
-        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
         var running = setTimeout(animate, 70);
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
     })();
     document.querySelector("#web").src = "";
 }
@@ -359,7 +361,7 @@ function quote() {
     var el = document.getElementById('str');
     el.innerHTML = "";
     document.querySelector("#web").src = "images/end.png";
-    document.querySelector("#web").style.borderRadius = "20px"
+    document.querySelector("#web").style.borderRadius = "20px";
 
 }
 
