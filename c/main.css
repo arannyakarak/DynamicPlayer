@@ -164,7 +164,7 @@ iframe {
 
 #transcript{
   /* padding: 1px; */
-  max-height: 250px;
+  max-height: 200px;
   overflow-y: scroll;
 }
 .show-captions a{
