@@ -214,7 +214,7 @@ function mythology() {
     var el = document.getElementById('str');
     el.innerHTML = "";
 
-    var string = "Mythology";
+    var string = "Hindu Mythology";
     var str = string.split("");
 
     (function animate() {
