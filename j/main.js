@@ -207,7 +207,7 @@ function infovideo() {
 
     document.querySelector("#web").src = "assets/About Bharatanatyam.mp4";
     document.querySelector("#web").style.borderRadius = "5px";
-   
+    
 }
 
 function mythology() {
