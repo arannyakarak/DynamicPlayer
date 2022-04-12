@@ -145,8 +145,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 //the custom callback functions to trigger when a cuepoint is hit.
-//You can code up whatever behavior you need in your own callbacks
-//feel free to rename the functions to be more descriptive of what they do.
+
 function intro() {
     var string = "The dance forms know as Bharatanatyam origin from South India ";
     var str = string.split("");
@@ -262,10 +261,15 @@ function mudravideo() {
         document.querySelector("#web").src = "";
         var el = document.getElementById('str');
         el.innerHTML = "";
+        document.querySelector("#vido").style = "border: 10px solid orange";
+        document.querySelector("#web").style = "none";
     }, 104000);
 
     document.querySelector("#web").src = "assets/Mudras in bharatanatyam.mp4";
     document.querySelector("#web").style.borderRadius = "5px";
+    document.querySelector("#web").style = "border: 10px solid orange";
+    document.querySelector("#vido").style = "border: 10px solid grey";
+    
 }
 
 function mudra1() {
