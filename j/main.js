@@ -83,9 +83,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     const selectVid = document.querySelector("#video_select");
     const display = document.getElementById("transcript");
+    const transcript_sa = document.getElementById("transcript-sa");
     const transcript_en = document.getElementById("transcript-en");
-    const transcript_es = document.getElementById("transcript-es");
-    const transcript_fr = document.getElementById("transcript-fr");
+    const transcript_hi = document.getElementById("transcript-hi");
     const showHide = document.getElementById("show-hide");
 
 
@@ -93,21 +93,21 @@ document.addEventListener("DOMContentLoaded", (e) => {
         selectVideo(e, vid);
     });
 
-    transcript_en.addEventListener(
+    transcript_sa.addEventListener(
         "click",
         function (e) {
             e.preventDefault();
             webvttTranscript("captions/aigiri.vtt", display);
         });
 
-    transcript_es.addEventListener(
+    transcript_en.addEventListener(
         "click",
         function (e) {
             e.preventDefault();
             webvttTranscript("subtitles/english.vtt", display);
         });
 
-    transcript_fr.addEventListener(
+    transcript_hi.addEventListener(
         "click",
         function (e) {
             e.preventDefault();
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         "click",
         function (e) {
             e.preventDefault();
-            webvttTranscript("subtitles/french.vtt", display);
+            webvttTranscript("subtitles/english.vtt", display);
             if (e.target.innerHTML == "Show Transcript") {
                 e.target.innerHTML = "Hide Transcript";
                 display.style.display = "block";
