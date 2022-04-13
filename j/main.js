@@ -339,11 +339,6 @@ function story2() {
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
         var running = setTimeout(animate, 70);
     })();
-    // document.querySelector("#web").src =
-    // "images/durga.png";
-    // document.body.style.backgroundImage = "url('images/bc4.jpg')";
-    // document.querySelector("#web").style.borderRadius = "2px";
-    // document.querySelector("#vido").style = "none";
 
 }
 
